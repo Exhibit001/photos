@@ -3,36 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exhibit001 Fashion</title>
-  <link rel="canonical" href="https://exhibit001.fashion/" />
-  <meta name="description" content="Explore the handmade garments and fashion innovations of Exhibit001." />
-  <meta name="keywords" content="Exhibit001 fashion, handmade clothes, unique jeans, fashion archive, S!CK" />
+  <title>Photo Archive | Exhibit001</title>
+  <link rel="canonical" href="https://exhibit001.photos/" />
+
+  <!-- ✅ SEO Meta -->
+  <meta name="description" content="Browse Exhibit001’s photo archive — showcasing raw studio photography, texture closeups, and streetwear visuals." />
+  <meta name="keywords" content="Exhibit001 photos, studio fashion shots, streetwear photography, raw textures, NYC alternative fashion" />
   <meta name="author" content="Exhibit001" />
-  <meta property="og:title" content="Exhibit001 — Fashion Archive" />
-  <meta property="og:description" content="Preview the fashion lineup from Exhibit001, launching soon." />
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="Photo Archive | Exhibit001" />
+  <meta property="og:description" content="A photo-based look at Exhibit001’s handmade process — from materials to moments on the streets." />
   <meta property="og:image" content="https://exhibit001.com/cover.jpg" />
-  <meta property="og:url" content="https://exhibit001.fashion" />
+  <meta property="og:url" content="https://exhibit001.photos" />
   <meta property="og:type" content="website" />
+
+  <!-- ✅ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Exhibit001 Photo Archive",
+    "url": "https://exhibit001.photos",
+    "description": "Photo archive of Exhibit001 — handmade garments, studio captures, and raw textures in New York City.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Exhibit001"
+    }
+  }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
   <style>
-    html, body {
+    body {
+      margin: 0;
       background: black;
       color: white;
-      font-family: 'Press Start 2P', monospace;
+      font-family: 'Press Start 2P', cursive;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
       padding: 20px;
-      margin: 0;
     }
+
     h1 {
       font-size: 18px;
+      margin-bottom: 40px;
+      text-shadow: 0 0 4px #f0f;
+    }
+
+    .photo-preview {
+      border: 3px dashed white;
+      padding: 36px;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .photo-preview p {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .placeholder-image {
+      margin-top: 24px;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      background: #111;
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 10px;
+    }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 28px; }
+      .photo-preview p { font-size: 14px; }
+      .placeholder-image { font-size: 14px; }
     }
   </style>
 </head>
 <body>
-  <h1>🧵 FASHION PREVIEW COMING SOON</h1>
+  <h1>📸 Photos Coming Soon</h1>
+  <div class="photo-preview">
+    <p>Studio shots, close-ups, and street captures from the Exhibit001 archive will be added here soon.</p>
+    <div class="placeholder-image">[ IMAGE SLOT ]</div>
+  </div>
 </body>
 </html>
